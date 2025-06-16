@@ -1,19 +1,27 @@
-<h1 align="center">Nexus</h1>
-<h2 align="center">Vanilla TypeScript Module Template</h2>
+# Nexus - Raspberry Pi Connect
 
-<p align="center">
-	<img src="./repo-assets/256x256.png" alt="Nexus Logo" width="200" />
-</p>
+Remotely connect to your Raspberry Pi to screenshare or access the remote shell within Nexus.
 
-A template for [Nexus](https://github.com/aarontburn/nexus-core) to develop modules using TypeScript.
+Example: Accessing the remote shell.  
+<img src="repo-assets/remote-shell.png" width="500px">
 
-## Getting Started
-To learn how to develop a module for Nexus, visit [Building Your First Module](https://github.com/aarontburn/nexus-core/blob/main/docs/getting_started/tutorial/BuildingYourFirstModule.md).
 
-## Examples
+Example: Screen-sharing (Nexus within Nexus!)   
+<img src="repo-assets/screenshare.png" width="500px">
 
-### [Nexus: Spotify Monkey](https://github.com/aarontburn/nexus-spotify-monkey)
-Embed Spotify as a Nexus module... by monkeying it around.
 
-### [Nexus: Volume Controller](https://github.com/aarontburn/nexus-volume-controller)
-A volume controller for Nexus, including features like background muting.
+## Installation
+You will need to setup [Raspberry Pi Connect](https://www.raspberrypi.com/documentation/services/connect.html) on your Raspberry Pi.
+
+
+1. Press the "Install to Nexus" button for easy installation directly to your Nexus client.
+   
+or
+
+1. Download the latest release `.zip`. 
+2. In Nexus, navigate to **Settings** > **Import Module**.
+3. Select the downloaded `.zip` file to install.
+
+
+## Privacy
+This module collects no user information and stores only session cookies. 
