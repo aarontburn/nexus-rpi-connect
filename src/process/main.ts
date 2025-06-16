@@ -34,7 +34,6 @@ export default class ChildProcess extends Process {
             url: 'https://connect.raspberrypi.com/devices',
             userAgent: session.fromPartition(`persist:${MODULE_ID}`).getUserAgent().replace(/Electron\/*/, ''),
             partition: `persist:${MODULE_ID}`,
-            preload: path.join(__dirname, "../renderer/preload.js")
         })
     }
 

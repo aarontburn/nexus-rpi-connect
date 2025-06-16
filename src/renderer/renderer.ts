@@ -6,7 +6,7 @@ const sendToProcess = (eventType: string, ...data: any[]): Promise<void> => {
 window.ipc.onProcessEvent((eventType: string, data: any[]) => {
     switch (eventType) {
         case "params": {
-            const { url, userAgent, partition, preload } = data[0];
+            const { url, userAgent, partition } = data[0];
 
             const html: string = `
                 <webview 
@@ -14,7 +14,7 @@ window.ipc.onProcessEvent((eventType: string, data: any[]) => {
                     id="view"
                     partition="${partition}" 
                     userAgent="${userAgent}"
-                    preload="file://${preload}"
+                    preload="./preload.js"
                 >
                 </webview>
             `
